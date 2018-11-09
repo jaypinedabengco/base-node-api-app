@@ -1,0 +1,10 @@
+{
+  "dynamo": {
+    "endpoint": "DYNAMO_ENDPOINT"
+  }, 
+  "mysql": {
+      "host": "MYSQL_HOST", 
+      "password": "MYSQL_PASSWORD", 
+      "user": "MYSQL_USER"
+  }
+}

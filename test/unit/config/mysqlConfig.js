@@ -1,30 +1,6 @@
 var expect = require('chai').expect
 var config = require('config')
 
-describe('Build DB config', () => {
-  const { build } = config
-  it(`'build' exist on config`, () => {
-    expect(!build).to.not.equal(true)
-  })
-})
-
-describe('Dynamo DB config', () => {
-  const { dynamo } = config
-  const DYNAMO_ENDPOINT = process.env.DYNAMO_ENDPOINT
-
-  it(`'dynamo' exist on config`, () => {
-    expect(!dynamo).to.not.equal(true)
-  })
-
-  it(`'DYNAMO_ENDPOINT' exist on Systems Environment Variable`, () => {
-    expect(!DYNAMO_ENDPOINT).to.not.equal(true)
-  })
-
-  it(`'dynamo.endpoint' should be the same with the 'DYNAMO_ENDPOINT' from system environment`, () => {
-    expect(DYNAMO_ENDPOINT).is.equal(dynamo.endpoint)
-  })
-})
-
 describe('Mysql DB config', () => {
   const { mysql } = config
   const MYSQL_HOST = process.env.MYSQL_HOST

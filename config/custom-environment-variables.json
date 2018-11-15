@@ -1,10 +1,13 @@
 {
   "dynamo": {
     "endpoint": "DYNAMO_ENDPOINT"
-  }, 
+  },
+  "app": {
+    "port": "TEST_APP_PORT"
+  },
   "mysql": {
-      "host": "MYSQL_HOST", 
-      "password": "MYSQL_PASSWORD", 
-      "user": "MYSQL_USER"
+    "host": "MYSQL_HOST",
+    "password": "MYSQL_PASSWORD",
+    "user": "MYSQL_USER"
   }
 }

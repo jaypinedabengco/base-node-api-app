@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import test from './../../../service/test.js'
 
-describe.only(`Test Services`, () => {
+describe.only(`Test Service`, () => {
   describe(`testServiceFunctionThatDoSomething function`, () => {
     it(`should return a promise`, () => {
       const promise = test.testServiceFunctionThatDoSomething()
